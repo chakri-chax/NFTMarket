@@ -2,7 +2,7 @@
 import {ethers } from 'ethers'
 import {useEffect,useState} from 'react'
 import axios, { HttpStatusCode } from 'axios'
-import Web3Modal from 'web3Modal'
+import Web3Modal from 'web3modal'
 import { nftaddress,nftmarketaddress } from '../config'
 
 import NFT from "../artifacts/contracts/NFT.sol/NFT.json"
@@ -27,7 +27,7 @@ export default function Home(){
             const meta=await axios.get(tokenUri)
             let price=ethers.utils.formatUnits(i.price.toString(),'ether')
 
-            let item={
+            let item={ 
                 price,
                 tokenId:i.tokenId.toNumber(),
                 seller:i.seller,
@@ -61,11 +61,11 @@ export default function Home(){
 
     if(loadingState==="loaded" && !nfts.length)
     return(
-        <div>
+        <div> 
             <p className="px-10 py-10 text-2xl font-bold flex justify-center text-cyan-200">
                 There are currently no NFTs in the Marketplace.<br/> Please come back later
             </p>
-        </div>
+        </div> 
     )
 
     return(

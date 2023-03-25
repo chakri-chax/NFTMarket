@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
-   
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.8.1",
@@ -18,7 +17,7 @@
     "next": "^13.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "web3modal": "^1.9.11"
+    "web3modal": "^1.9.12"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
